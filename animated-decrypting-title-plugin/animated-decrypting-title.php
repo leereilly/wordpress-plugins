@@ -26,11 +26,11 @@
 ?>
 
 	<?php
-	wp_enqueue_script('animated-decrpyting-title', '/wp-content/plugins/wordpress-animated-title-plugin/js/animated-decrypting-title.js');
+	wp_enqueue_script('animated-decrpyting-title', '/wp-content/plugins/animated-decrypting-title/js/animated-decrypting-title.js');
 	add_action('admin_menu', 'animated_decrpyting_title_menu');
 
 	function animated_decrpyting_title_menu() {
-	  add_options_page('My Plugin Options', 'My Plugin', 'manage_options', 'my-unique-identifier', 'my_plugin_options');
+	  add_options_page('Animated Decrypting Title Options', 'Animated Decrypting Title', 'manage_options', 'my-unique-identifier', 'my_plugin_options');
 	}
 	
 	function my_plugin_options() {
